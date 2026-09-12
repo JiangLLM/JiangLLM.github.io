@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#fffcf4">
-  <meta name="description" content="Jiang Wu's research on LLM post-training, personalized large language models, memory for self-evolving agents, and recursive self-improvement. Biography and recent publications.">
+  <meta name="description" content="Jiang Wu's research on reinforcement learning, LLM post-training, personalized language models, and self-evolving agents. Biography and recent publications, including T²-GRPO for multi-turn agent training.">
   <title>Jiang Wu — Research</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23263e8c'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='29' fill='white'%3Ejw%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&amp;family=Sofia&amp;display=swap">
-  <link rel="stylesheet" href="styles.css?v=2930a83d5d49">
+  <link rel="stylesheet" href="styles.css?v=c58075650f5c">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -28,7 +28,7 @@
             <a href="https://github.com/JiangLLM">GitHub</a>
           </div>
           <p class="bio">I am interested in <strong>personalization</strong>, <strong>self-evolving agents</strong>, and <strong>recursive self-improvement (RSI)</strong>, particularly how models can use feedback and experience to improve their behavior. I currently focus on <strong>agent memory</strong>: comparing repeated attempts at a task, separating grounded episodic evidence from transferable strategies, and checking when a stored lesson applies to a new problem.</p>
-          <p class="bio">I have been working on <strong>LLM post-training</strong> and <strong>personalized large language models</strong>, including preference optimization, lightweight adaptation, and preference-guided decoding. A central question is how to learn from user feedback while keeping individual preferences distinct from explicit task and style instructions, so that personalization remains efficient and controllable.</p>
+          <p class="bio">I have been working on <strong>LLM post-training</strong>, <strong>reinforcement learning (RL)</strong>, and <strong>personalized large language models</strong>, including preference optimization, lightweight adaptation, and preference-guided decoding. My RL work explores how to train <strong>multi-turn agents</strong> with turn-level feedback, trajectory-level rewards, and safety constraints. I also study how to learn from user feedback while keeping individual preferences distinct from explicit task and style instructions, so that personalization remains efficient and controllable.</p>
           <p class="bio">I graduated from the <a href="https://www.cs.usc.edu/">University of Southern California</a> in 2020.</p>
         </div>
       </section>
@@ -80,6 +80,14 @@
               <h3><a href="https://arxiv.org/abs/2606.15540">AP-GRPO: Anchor-Gated Phonetic Alignment with Policy Optimization for Pathological Speech Reconstruction</a></h3>
               <p class="authors">Pengfei Zhang, Hoang H Nguyen, Yutong Song, Wenjun Huang, Tahmid Imtiaz Imu, Henry Peng Zou, <strong>Jiang Wu</strong>, Honghui Xu, Amir M. Rahmani</p>
               <p class="paper-meta"><strong class="venue">EMNLP 2026</strong><a class="paper-link" href="https://arxiv.org/abs/2606.15540">[Paper]<span class="sr-only">: AP-GRPO</span></a></p>
+            </div>
+          </article>
+          <article class="paper paper-without-figure">
+            <div class="paper-copy">
+              <h3><a href="https://github.com/JiangLLM/caregiver-r1">T²-GRPO: Turn–Trajectory Group Relative Policy Optimization for Caregiver Agents</a></h3>
+              <p class="authors"><strong>Jiang Wu</strong> et al.</p>
+              <p class="paper-meta"><strong class="venue">Under review, NeurIPS 2026</strong><a class="paper-link" href="https://github.com/JiangLLM/caregiver-r1">[Code]<span class="sr-only">: T²-GRPO</span></a></p>
+              <p class="paper-description">A reinforcement learning framework for multi-turn caregiver agents that combines simulator-derived turn-level rewards with trajectory-level care goals. Centered-rank advantage normalization and a hard safety veto guide policy optimization without an additional LLM judge at every turn.</p>
             </div>
           </article>
         </div>
